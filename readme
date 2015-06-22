@@ -1,0 +1,26 @@
+Ik had het veel beter kunnen doen, maar ik hoopte het vandaag nog op te kunnen sturen.
+Database 'StarApple'
+zie CRUD.php voor user en password in database.
+
+
+wat ik zeker beter had kunnen doen: 
+* beheerder kan niet inloggen tenzij er een user wordt toegevoegd aan tabel user
+
+CREATE TABLE `StarApple`.`user` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
+
+Een soort van setup pagina zou dit kunnen verhelpen, waar een beheerder een account kan aanmaken.
+Het wachtwoord wordt op dit moment niet verwerkt in een mda5 hash.
+
+
+* voor de vacatures wordt gebruik gemaakt van tabel vacatures
+CREATE TABLE `StarApple`.`vacatures` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `titel` VARCHAR(45) NULL,
+  `tekst` TEXT NULL,
+  PRIMARY KEY (`id`));
+
+Hier had ik het een en ander beter kunnen doen wat betreft inloggen en ingelogd blijven, field voor datum, etc.

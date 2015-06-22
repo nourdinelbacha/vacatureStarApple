@@ -1,0 +1,21 @@
+
+<div class="container">
+    <a href="#/beheer" class="btn btn-primary pull-right">Beheer vacatures</a> <br>
+    <h1>Voeg een vacature toe</h1>
+    
+  
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label>Titel vacature</label>
+            <input type="text"  class="form-control" placeholder="Titel van uw vacature" ng-model="titelVacature">
+        </div>
+        <div class="form-group">
+            <label>Tekst vacature</label>
+            <textarea class="form-control" rows="6" ng-model="tekstVacature"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-default" ng-click="submitVacature()">Verstuur</button>
+        </div> <b>{{bericht}}</b>
+    </form>
+    
+</div>
